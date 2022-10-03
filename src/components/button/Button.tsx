@@ -3,27 +3,17 @@ import React from "react";
 import classes from "./Button.module.css";
 
 interface Props {
-  className: string;
   link: string;
   children?: React.ReactNode;
   onClick?: () => void;
+  buttonStyle: string;
 }
 
 const Button: React.FC<Props> = (props) => {
-  const { className, link, children } = props;
-
-  let buttonClasses;
-
-  if (className === "primary") {
-    buttonClasses = classes.primary;
-  } else if (className === "secondary") {
-    buttonClasses = classes.secondary;
-  } else {
-    buttonClasses = "";
-  }
+  const { link, buttonStyle, children } = props;
 
   return (
-    <button className={buttonClasses}>
+    <button className={classes.button} data-style={buttonStyle}>
       <a href={link}>{children}</a>
     </button>
   );

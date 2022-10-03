@@ -62,10 +62,6 @@ p[data-width="wide"] {
   margin-inline: auto;
 }
 
-button {
-  font-family: var(--ff-button);
-  font-size: var(--fs-button);
-}
 button + button {
   margin-left: 1rem;
 }

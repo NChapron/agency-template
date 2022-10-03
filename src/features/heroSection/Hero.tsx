@@ -10,10 +10,10 @@ function Hero() {
         eget arcu rutrum congue. Integer luctus nunc vitae.
       </p>
       <div>
-        <Button className="primary" link="#">
+        <Button buttonStyle="primary" link="#">
           Get Started
         </Button>
-        <Button className="secondary" link="#">
+        <Button buttonStyle="secondary" link="#">
           Learn More
         </Button>
       </div>
