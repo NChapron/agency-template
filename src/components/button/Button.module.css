@@ -1,0 +1,34 @@
+@import url(../../assets/global.css);
+
+/* Primary button */
+.primary {
+  background-color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  text-align: center;
+  text-transform: uppercase;
+  width: 9rem;
+  padding-block: 0.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.primary a {
+  color: var(--clr-white);
+  text-decoration: none;
+}
+
+/* Secondary button */
+.secondary {
+  border: 2px solid var(--clr-white);
+  background: none;
+  text-align: center;
+  width: 9rem;
+  padding-block: 0.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.secondary a {
+  color: var(--clr-white);
+  text-decoration: none;
+}

@@ -1,5 +1,11 @@
-const HomePage = () => {
-  return <div>HomePage</div>;
+import Hero from "../../features/heroSection/Hero";
+
+const HomePage: React.FC = () => {
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default HomePage;

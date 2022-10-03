@@ -1,0 +1,82 @@
+:root {
+  /* Colors */
+  --clr-primary: #ff6d54;
+  --clr-secondary: #383953;
+  --clr-white: #ffffff;
+
+  /* Background */
+  --bg-primary: var(--clr-secondary);
+
+  /* Fonts */
+  --ff-primary: "Teko", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+
+  --ff-headings: var(--ff-primary);
+  --ff-body: var(--ff-secondary);
+  --ff-button: var(--ff-primary);
+
+  /* Size */
+  --h1-size: 4.5rem;
+  --h2-size: 3.125rem;
+  --h3-size: 3rem;
+  --h4-size: 2rem;
+
+  --fs-body: 1rem;
+  --fs-button: 1.5rem;
+
+  /* Max width container */
+  --max-width: 1250px;
+  --container-padding: 2rem;
+
+  /* Section padding top and bottom */
+  --padding-block-hero: 14rem;
+  --padding-block-section: 10rem;
+
+  /* Space between elements */
+  --flow-primary: 1rem;
+}
+
+/* general styling */
+
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-headings);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  line-height: calc(var(--h1-size) + 0.5rem);
+}
+
+p[data-width="wide"] {
+  max-width: 56ch;
+  margin-inline: auto;
+}
+
+button {
+  font-family: var(--ff-button);
+  font-size: var(--fs-button);
+}
+button + button {
+  margin-left: 1rem;
+}
+
+/* Utility classes */
+
+.container {
+  width: min(var(--max-width), 100% - (var(--container-padding)));
+  margin-inline: auto;
+}
+
+.flow :not(:first-child) {
+  margin-top: var(--flow-primary);
+}

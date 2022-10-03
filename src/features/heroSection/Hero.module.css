@@ -1,0 +1,14 @@
+@import url(../../assets/global.css);
+
+.hero {
+  padding-block: calc(var(--padding-block-hero) / 2);
+  background-color: var(--bg-primary);
+  color: var(--clr-white);
+  text-align: center;
+}
+
+@media (min-width: 70em) {
+  .hero {
+    padding-block: var(--padding-block-hero);
+  }
+}
