@@ -1,0 +1,41 @@
+@import url(../../assets/global.css);
+
+.about {
+  display: grid;
+  padding-inline: var(--container-padding);
+  padding-block: var(--padding-block-section);
+}
+
+.about > div > p {
+  max-width: 80%;
+}
+
+.video {
+  background: url(../../assets/about/book.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+  margin-top: 2rem;
+}
+
+.video > button {
+  cursor: pointer;
+  padding: 2.5rem;
+  border: none;
+  background: url(../../assets/video/video.png) no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 70em) {
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 0;
+  }
+
+  .video {
+    margin-top: 0;
+  }
+}

@@ -82,9 +82,11 @@ button + button {
 
 /* Utility classes */
 
-.container {
-  width: min(var(--max-width), 100% - (var(--container-padding)));
-  margin-inline: auto;
+@media (min-width: 70em) {
+  .container {
+    width: min(var(--max-width), 100% - (var(--container-padding)));
+    margin-inline: auto;
+  }
 }
 
 .flow :not(:first-child) {
