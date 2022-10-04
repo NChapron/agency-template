@@ -17,20 +17,20 @@
 
   /* Size */
   --h1-size: 4.5rem;
-  --h2-size: 3.125rem;
+  --h2-size: 4rem;
   --h3-size: 3rem;
   --h4-size: 2rem;
 
   --fs-body: 1rem;
   --fs-button: 1.5rem;
 
-  /* Max width container */
-  --max-width: 1250px;
+  /* Max width container and padding left and right */
+  --max-width: 1140px;
   --container-padding: 2rem;
 
   /* Section padding top and bottom */
   --padding-block-hero: 14rem;
-  --padding-block-section: 10rem;
+  --padding-block-section: 7.5rem;
 
   /* Space between elements */
   --flow-primary: 1rem;
@@ -57,9 +57,23 @@ h1 {
   line-height: calc(var(--h1-size) + 0.5rem);
 }
 
+h2 {
+  font-size: var(--h2-size);
+  line-height: calc(var(--h1-size) + 0.5rem);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  line-height: calc(var(--h1-size) + 0.5rem);
+}
+
 p[data-width="wide"] {
   max-width: 56ch;
   margin-inline: auto;
+}
+
+p[data-width="small"] {
+  max-width: 24ch;
 }
 
 button + button {
