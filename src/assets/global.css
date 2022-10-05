@@ -2,10 +2,13 @@
   /* Colors */
   --clr-primary: #ff6d54;
   --clr-secondary: #383953;
+  --clr-grey: #FAFAFA;
   --clr-white: #ffffff;
+  --clr-black: #000000;
 
   /* Background */
   --bg-primary: var(--clr-secondary);
+  --bg-secondary: var(--clr-grey);
 
   /* Fonts */
   --ff-primary: "Teko", sans-serif;
