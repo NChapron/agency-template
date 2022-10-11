@@ -12,10 +12,9 @@
 
 .skills > ul {
   display: grid;
-}
-
-.skills > ul :not(:first-child) {
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 .skills > ul > li {
@@ -28,12 +27,5 @@
   .skills > ul {
     width: min(var(--max-width), 100% - (var(--container-padding)));
     margin-inline: auto;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    grid-auto-flow: column;
-  }
-
-  .skills > ul :not(:first-child) {
-    margin-top: 0;
   }
 }
