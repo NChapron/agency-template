@@ -13,7 +13,7 @@ const WorkItem: React.FC<WorksProps> = (props) => {
   const { image, title, link } = props;
 
   return (
-    <li>
+    <li className={classes.workItem}>
       <figure>
         <img src={image} />
         <figcaption className={classes.caption}>
